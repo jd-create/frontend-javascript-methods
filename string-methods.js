@@ -13,6 +13,11 @@ console.log(word.length);
 const fruit = "Banaan";
 const vegetable = "Aardappel";
 
+function isFirstWordLongestThanSecond (word1, word2) {
+    return word1.lastIndexOf > word2.lastIndexOf;
+   }
+
+console.log(isFirstWordLongestThanSecond("Banaan","Aardappel"))
 
 
 /* Opdracht 2 */
