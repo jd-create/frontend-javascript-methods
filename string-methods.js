@@ -43,7 +43,11 @@ console.log(lastCharOfWord(fruit));
 
 const userInput = "  De kat krabt de krullen van de trap ";
 
+function deleteSpaceBeforeAndAfter(sentence) {
+    return sentence.trim();
+}
 
+console.log(deleteSpaceBeforeAndAfter(userInput))
 
 /* Opdracht 4 */
 // Check of het woord "Fantastisch" in onderstaande zin voorkomt en log dit in de terminal.
@@ -51,7 +55,14 @@ const userInput = "  De kat krabt de krullen van de trap ";
 
 const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?"
 
+function isThisWordPresent(word, sentence) {
+    word = word.toLowerCase();
+    sentence = sentence.toLowerCase();
+    return sentence.includes(word);
+}
 
+console.log(isThisWordPresent("Fantastisch", story));
+console.log(isThisWordPresent("fantastisch", story));
 
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
