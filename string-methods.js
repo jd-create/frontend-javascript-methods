@@ -14,10 +14,10 @@ const fruit = "Banaan";
 const vegetable = "Aardappel";
 
 function isFirstWordLongestThanSecond (word1, word2) {
-    return word1.lastIndexOf > word2.lastIndexOf;
+    return word1.length > word2.length;
    }
 
-console.log(isFirstWordLongestThanSecond("Banaan","Aardappel"))
+console.log(isFirstWordLongestThanSecond(fruit,vegetable))
 
 
 /* Opdracht 2 */
@@ -26,7 +26,16 @@ console.log(isFirstWordLongestThanSecond("Banaan","Aardappel"))
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
 
+let word3 = "banaan";
 
+function lastCharOfWord(word3) {
+
+    return word3.charAt(word3.length - 1);
+
+}
+
+console.log(lastCharOfWord(vegetable));
+console.log(lastCharOfWord(fruit));
 
 /* Opdracht 3 */
 //  Haal de spaties aan het begin en eind van onderstaande zin weg en log dit in de terminal
