@@ -68,7 +68,14 @@ console.log(isThisWordPresent("fantastisch", story));
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
 
+function cut(sentence) {
+    let outcome = [];
+    outcome = sentence.split(".");
 
+    return outcome[0] + ".";
+}
+
+console.log(cut(story));
 
 /* Opdracht 6 */
 // Maak van onderstaand bedrag een Nederlands bedrag door het volgende te doen:
