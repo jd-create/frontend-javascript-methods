@@ -86,7 +86,11 @@ console.log(cut(story));
 
 const price = "$35.59";
 
+function setToEuropeanValue(usValue) {
+    euValue = usValue.replace("$","€");
+    euValue = euValue.replace(".",",");
+    return euValue;
+}
 
-
-
+console.log(setToEuropeanValue(price));
 
